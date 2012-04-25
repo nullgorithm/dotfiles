@@ -1,0 +1,22 @@
+[default]
+quiet=1
+lirc=0
+
+# video
+#vo=vdpau,xv
+vo=xv
+monitoraspect=16:9
+double=yes
+
+# audio
+ao=alsa
+channels=6
+alang=English,eng,en
+softvol=1
+volstep=1
+
+# subtitles
+sub-fuzziness=1
+slang=English,eng,en
+fontconfig=1
+font="DejaVu Sans"

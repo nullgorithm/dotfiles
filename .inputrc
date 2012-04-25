@@ -1,0 +1,13 @@
+set show-all-if-ambiguous on
+
+set editing-mode vi
+
+set keymap vi-command
+"gg":beginning-of-history
+"G":end-of-history
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+
+set keymap vi-insert
+"\e[A":history-search-backward
+"\e[B":history-search-forward

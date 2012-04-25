@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import atexit
+import os
+import readline
+import rlcompleter
+
+readline.parse_and_bind('tab: complete')
+
+readline.set_history_length(500)
+histfile = os.path.join(os.path.expanduser('~'), '.cache', 'pyhist')
+
+try:
+    readline.read_history_file(histfile)
+except IOError as e:
+    if e.errno != 2:
+        raise
+
+atexit.register(readline.write_history_file, histfile)
+
+del histfile

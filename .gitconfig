@@ -1,0 +1,13 @@
+[user]
+	name = Daniel Micay
+	email = danielmicay@gmail.com
+
+[color]
+	ui = auto
+
+[core]
+	compression = 9
+	autocrlf = input
+
+[apply]
+	whitespace = fix

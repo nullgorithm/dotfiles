@@ -1,0 +1,11 @@
+gtk-theme-name="Greybird"
+gtk-icon-theme-name="Faenza"
+gtk-font-name="Segoe UI 9"
+gtk-toolbar-style=2
+gtk-recent-files-max-age=0
+
+# hide hinted space around vim
+style "vimfix" {
+  bg[NORMAL] = "#3f3f3f"
+}
+widget "vim-main-window.*GtkForm" style "vimfix"
