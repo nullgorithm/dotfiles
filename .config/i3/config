@@ -144,6 +144,7 @@ bindsym $mod+r mode "resize"
 new_window 1pixel
 
 for_window [class="MPlayer"] floating enable
+for_window [class="mplayer2"] floating enable
 for_window [class="Firefox"] floating enable
 for_window [class="Firefox" instance="Navigator"] floating disable
 
