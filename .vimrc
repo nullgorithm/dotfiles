@@ -82,8 +82,8 @@ if has('mouse')
 endif
 
 if has ('gui_running')
-    " autoselect, icon, console dialogs, don't source menu.vim
-    set guioptions=aicM
+    " autoselect, console dialogs, don't source menu.vim
+    set guioptions=acM
     set mousefocus
     set guifont=Consolas\ 9
     autocmd GUIEnter * set t_vb=
