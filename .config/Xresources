@@ -46,14 +46,6 @@ URxvt.background:        #3f3f3f
 !URxvt.background:        rgba:3f00/3f00/3f00/cccc
 !URxvt.depth:             32
 
-! tab appearance
-!URxvt.autohide:          yes
-!URxvt.tabbed.title:      no
-!URxvt.tabbed.tabbar-fg:  7
-!URxvt.tabbed.tabbar-bg:  0
-!URxvt.tabbed.tab-fg:     7
-!URxvt.tabbed.tab-bg:     4
-
 ! color
 ! low-intensity
 ! high-intensity
