@@ -42,9 +42,6 @@ URxvt.buffered:          true
 URxvt.foreground:        #dcdccc
 URxvt.scrollBar:         false
 URxvt.background:        #3f3f3f
-! true transparency
-!URxvt.background:        rgba:3f00/3f00/3f00/cccc
-!URxvt.depth:             32
 
 ! color
 ! low-intensity
