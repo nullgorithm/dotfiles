@@ -11,3 +11,4 @@ font=Consolas 9
 cursor_shape=0
 term=xterm-256color
 cursor_blink_mode=1
+backspace_binding=1
