@@ -147,6 +147,8 @@ for_window [class="mplayer2"] floating enable
 for_window [class="Firefox"] floating enable
 for_window [class="Firefox" instance="Navigator"] floating disable
 
+client.background #3f3f3f
+
 bar {
     font -*terminus-*-*-*-*-*-*-*-*-*-iso10646-*
     position top
