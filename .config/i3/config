@@ -9,7 +9,7 @@ font -*-terminus-*-*-*-*-12-*-*-*-*-iso10646-*
 floating_modifier $mod
 
 # exec bindings
-bindsym $mod+Return exec roxterm
+bindsym $mod+Return exec term
 bindsym $mod+B exec firefox
 bindsym $mod+p exec dmenu_run -fn '-*terminus-*-*-*-*-*-*-*-*-*-iso10646-*' -nf '#dcdccc' -nb '#1f1f1f' -sf '#1f1f1f' -sb '#dcdccc'
 bindsym $mod+g exec gvim
