@@ -87,8 +87,8 @@ fi
 
 _tmux_pane_complete() {
     [[ -z "$TMUX_PANE" ]] && return 1
-    local -a words
-    words=(${(u)=$(tmux capture-pane \; show-buffer \; delete-buffer)})
+    local -a -U words
+    words=(${=$(tmux capture-pane \; show-buffer \; delete-buffer)})
     compadd -a words
 }
 
