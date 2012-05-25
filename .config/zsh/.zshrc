@@ -290,9 +290,9 @@ bindkey              '^Z'               fancy-ctrl-z
 bindkey -M vicmd     '^Z'               fancy-ctrl-z
 # }}}
 
-# title (for termite, xterm and rxvt) {{{
+# title (for termite, (vte-256color) xterm and rxvt) {{{
 case "$TERM" in
-    termite|xterm*|rxvt*)
+    vte-256color|xterm*|rxvt*)
         precmd() { print -Pn '\e];%n (%~) - Terminal\a' } ;;
 esac
 # }}}
