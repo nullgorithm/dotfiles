@@ -204,10 +204,14 @@ zle -N down-line-or-history-beginning-search-forward
 
 # zle keybindings (vim-like) {{{
 # make zsh/terminfo work for terms with application and cursor modes
-zle-line-init() { zle-keymap-select; echoti smkx }
-zle-line-finish() { echoti rmkx }
-zle -N zle-line-init
-zle -N zle-line-finish
+case "$TERM" in
+    vte*|xterm*)
+        zle-line-init() { zle-keymap-select; echoti smkx }
+        zle-line-finish() { echoti rmkx }
+        zle -N zle-line-init
+        zle -N zle-line-finish
+        ;;
+esac
 # vi editing mode
 bindkey -v
 # shift-tab
