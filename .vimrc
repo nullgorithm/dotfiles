@@ -57,7 +57,7 @@ autocmd FileType gitconfig setlocal noet sts=0 ts=8 sw=8
 autocmd FileType c let g:clang_user_options = "-std=c11"
 autocmd FileType cpp let g:clang_user_options = "-std=c++11"
 
-autocmd FileType rst,markdown,python setl textwidth=79
+autocmd FileType rst,markdown setl textwidth=79
 
 " searching
 set hlsearch
