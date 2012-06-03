@@ -3,7 +3,7 @@
 mkdir -p /tmp/adobe-$USER /tmp/macromedia-$USER
 xset -b
 xmodmap -e "keycode 135 = Super_R"
-unclutter -idle 4 &
+unclutter -grab -idle 4 &
 xrdb -merge ~/.config/Xresources
 hsetroot -full ~/images/background.png
 exec i3
