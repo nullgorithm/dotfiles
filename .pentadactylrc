@@ -1,0 +1,4 @@
+set hlfind
+set guioptions=Cs
+
+colorscheme zenburn
