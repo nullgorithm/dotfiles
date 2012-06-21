@@ -11,12 +11,6 @@ export EDITOR=/usr/bin/vim \
     VISUAL=/usr/bin/vim \
     PAGER=less
 
-if have vimpager; then
-    export MANPAGER=vimpager
-else
-    export MANPAGER=$PAGER
-fi
-
 # disable less history file and display color control sequences as colors
 export LESSHISTFILE=- \
     LESS=-R
