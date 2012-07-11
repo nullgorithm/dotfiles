@@ -18,7 +18,6 @@ setopt nobeep \
     notify \
     nobgnice \
     correct \
-    noflowcontrol \
     interactivecomments \
     printexitvalue \
     autocd \
