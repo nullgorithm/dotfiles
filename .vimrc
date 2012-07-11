@@ -70,10 +70,6 @@ set wrapscan
 " detect filetype and use appropriate indenting and plugins
 filetype indent plugin on
 
-" enter ex mode with semi-colon
-nnoremap ; :
-vnoremap ; :
-
 let mapleader = ","
 
 " F5 toggles paste mode
