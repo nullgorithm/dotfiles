@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=transmission-remote
+Exec=transmission-remote -a %u
+Icon=transmission
+Terminal=false
+Type=Application
+Categories=Network;FileTransfer;P2P;GTK;
+StartupNotify=false
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
