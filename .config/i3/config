@@ -14,8 +14,8 @@ bindsym $mod+B exec firefox
 bindsym $mod+p exec dmenu_run -fn '-*terminus-*-*-*-*-*-*-*-*-*-iso10646-*' -nf '#dcdccc' -nb '#1f1f1f' -sf '#1f1f1f' -sb '#dcdccc'
 bindsym $mod+g exec gvim
 bindsym $mod+M exec amixer set Master toggle
-bindsym $mod+minus exec amixer set Master 1%-
-bindsym $mod+plus exec amixer set Master 1%+
+bindsym XF86AudioLowerVolume exec amixer set Master 1%-
+bindsym XF86AudioRaiseVolume exec amixer set Master 1%+
 bindsym $mod+u exec sh -c 'firefox $(xclip -out)'
 
 # kill focused window
