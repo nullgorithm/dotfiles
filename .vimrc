@@ -86,7 +86,7 @@ if has ('gui_running')
     " autoselect, console dialogs, don't source menu.vim
     set guioptions=acM
     set mousefocus
-    set guifont=Consolas\ 9
+    set guifont=Monospace\ 9
     autocmd GUIEnter * set t_vb=
     map <S-Insert> <MiddleMouse>
     map! <S-Insert> <MiddleMouse>
