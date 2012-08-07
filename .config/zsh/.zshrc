@@ -94,15 +94,12 @@ _tmux_pane_complete() {
 compdef -k _tmux_pane_complete menu-select '^T'
 
 # aliases {{{
-# more readable
+have pacman-color && alias pacman=pacman-color
+have colordiff && alias diff=colordiff
 alias ls='ls -Ah --color=auto'
 alias df='df -h'
 alias du='du -h'
 alias free='free -m'
-have pacman-color && alias pacman=pacman-color
-have colordiff && alias diff=colordiff
-
-# more interactive, safe and verbose
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
@@ -115,6 +112,16 @@ alias chmod='chmod -c --preserve-root'
 alias chgrp='chgrp -c --preserve-root'
 alias rmdir='rmdir -v'
 alias mkdir='mkdir -vp'
+alias cling='cling -nologo -std=c++11'
+alias p=pacman
+alias shred='shred -uzvn 10'
+alias ll='ls -l'
+alias rr='rm -r'
+alias pu='pushd'
+alias po='popd'
+alias rh=rehash
+alias dirs='dirs -p'
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 # vim
 alias vim='vim -p'
@@ -131,18 +138,6 @@ else
     alias vigr="VISUAL='$VISUAL' vigr"
     alias crontab="EDITOR='$VISUAL' crontab"
 fi
-
-# general
-alias cling='cling -nologo -std=c++11'
-alias p=pacman
-alias shred='shred -uzvn 10'
-alias ll='ls -l'
-alias rr='rm -r'
-alias pu='pushd'
-alias po='popd'
-alias rh=rehash
-alias dirs='dirs -p'
-alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 if ! $isroot; then
     alias sudo="sudo "
