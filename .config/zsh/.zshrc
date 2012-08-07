@@ -95,7 +95,7 @@ compdef -k _tmux_pane_complete menu-select '^T'
 
 # aliases {{{
 # more readable
-alias ls='ls -h --color=auto'
+alias ls='ls -Ah --color=auto'
 alias df='df -h'
 alias du='du -h'
 alias free='free -m'
@@ -137,8 +137,6 @@ alias cling='cling -nologo -std=c++11'
 alias p=pacman
 alias shred='shred -uzvn 10'
 alias ll='ls -l'
-alias la='ls -A'
-alias {lla,lal}='ls -lA'
 alias rr='rm -r'
 alias pu='pushd'
 alias po='popd'
