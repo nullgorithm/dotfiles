@@ -44,13 +44,11 @@ let g:html_number_lines = 0
 " statusline
 set showmode showcmd ruler
 
-" 4 space indents globally
-set expandtab softtabstop=4 shiftwidth=4
+" 2 space indents globally
+set expandtab softtabstop=2 shiftwidth=2
 
-" 2 space indents for PKGBUILDs, html and xml
-au BufRead,BufNewFile PKGBUILD setl sts=2 sw=2
-au FileType html setl sts=2 sw=2
-au FileType xml setl sts=2 sw=2
+" 4 space indents for python
+autocmd FileType python setlocal sts=4 sw=4
 
 autocmd FileType conque_term setlocal nocursorline
 autocmd FileType go setlocal noet sts=0 ts=8 sw=8
