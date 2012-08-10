@@ -44,8 +44,9 @@ let g:html_number_lines = 0
 " statusline
 set showmode showcmd ruler
 
-" 2 space indents globally
+" default indent style
 set expandtab softtabstop=2 shiftwidth=2
+set cinoptions=(0
 
 " 4 space indents for python
 autocmd FileType python setlocal sts=4 sw=4
