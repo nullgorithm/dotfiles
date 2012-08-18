@@ -45,6 +45,6 @@ export MPD_HOST=~/music/socket
 export PYTHONSTARTUP=~/.config/pythonrc
 # }}}
 
-if [[ $UID != 0 && -z $DISPLAY && $(tty) = /dev/tty2 ]]; then
+if [[ $UID != 0 && -z $DISPLAY && $TTY = /dev/tty2 ]]; then
     exec xinit ~/.config/xinitrc -- /usr/bin/X -nolisten tcp vt07 &>/dev/null
 fi
