@@ -271,6 +271,16 @@ if [[ -n $terminfo[kcuf1] ]]; then
     bindkey          "$terminfo[kcuf1]" forward-char
     bindkey -M vicmd "$terminfo[kcuf1]" forward-char
 fi
+# shift-left
+if [[ -n $terminfo[kLFT] ]]; then
+    bindkey          "$terminfo[kLFT]" backward-word
+    bindkey -M vicmd "$terminfo[kLFT]" backward-word
+fi
+# shift-right
+if [[ -n $terminfo[kRIT] ]]; then
+    bindkey          "$terminfo[kRIT]" forward-word
+    bindkey -M vicmd "$terminfo[kRIT]" forward-word
+fi
 # h and l whichwrap
 bindkey -M vicmd     'h'                backward-char
 bindkey -M vicmd     'l'                forward-char
