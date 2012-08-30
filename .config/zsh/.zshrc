@@ -84,15 +84,6 @@ else
 fi
 # }}}
 
-_tmux_pane_complete() {
-    [[ -z "$TMUX_PANE" ]] && return 1
-    local -a -U words
-    words=(${=$(tmux capture-pane \; show-buffer \; delete-buffer)})
-    compadd -a words
-}
-
-compdef -k _tmux_pane_complete menu-select '^T'
-
 # aliases {{{
 have pacman-color && alias pacman=pacman-color
 have colordiff && alias diff=colordiff
