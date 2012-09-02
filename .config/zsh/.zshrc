@@ -59,8 +59,6 @@ zstyle ':completion:*:processes' command 'ps -e'
 zstyle ':completion:*:processes-names' command 'ps -eo comm'
 # cache completion
 zstyle ':completion:*' use-cache on
-# don't offer same parameter multiple times
-#zstyle ':completion:*:(rm|mv|cp|scp|diff|colordiff|kill|killall|vim|gvim|vimdiff):*' ignore-line yes
 # don't complete working directory in parent
 zstyle ':completion:*' ignore-parents parent pwd
 # completion for pacman-color
