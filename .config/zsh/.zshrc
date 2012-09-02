@@ -1,5 +1,5 @@
 # checks {{{
-[[ $UID == 0 ]] && isroot=true || isroot=false
+(( UID == 0 )) && isroot=true || isroot=false
 # test if command is available
 have() { which $1 &>/dev/null || return 1 }
 # }}}
