@@ -8,8 +8,8 @@ umask 077
 export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/bin"
 
 export EDITOR=/usr/bin/vim \
-    VISUAL=/usr/bin/vim \
-    PAGER=less
+  VISUAL=/usr/bin/vim \
+  PAGER=less
 
 # man page colors in less
 export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -22,12 +22,12 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 # disable less history file and display color control sequences as colors
 export LESSHISTFILE=- \
-    LESS=-R
+  LESS=-R
 
 # highest compression
 export GZIP=-9 \
-    BZIP=-9 \
-    XZ_OPT=-9
+  BZIP=-9 \
+  XZ_OPT=-9
 
 # use a 32-bit wine prefix
 export WINEARCH=win32
@@ -54,6 +54,8 @@ export MPD_HOST=~/music/socket
 export PYTHONSTARTUP=~/.config/pythonrc
 # }}}
 
-if [[ $UID != 0 && -z $DISPLAY && $TTY = /dev/tty2 ]]; then
-    exec xinit ~/.config/xinitrc -- /usr/bin/X -nolisten tcp vt07 &>/dev/null
+if (( UID )); then
+  vt=$(fgconsole 2>/dev/null)
+  (( vt == 1 )) && exec xinit ~/.config/xinitrc -- -nolisten tcp vt$vt &> ~/.xlog
+  unset vt
 fi
