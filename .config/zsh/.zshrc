@@ -186,7 +186,7 @@ zle -N down-line-or-history-beginning-search-forward
 # zle keybindings (vim-like) {{{
 # make zsh/terminfo work for terms with application and cursor modes
 case "$TERM" in
-    termite|vte*|xterm*)
+    vte*|xterm*)
         zle-line-init() { zle-keymap-select; echoti smkx }
         zle-line-finish() { echoti rmkx }
         zle -N zle-line-init
@@ -287,7 +287,7 @@ bindkey -M vicmd     '^Z'               fancy-ctrl-z
 
 # title (for vte, xterm and rxvt) {{{
 case "$TERM" in
-    termite|vte*|xterm*|rxvt*)
+    vte*|xterm*|rxvt*)
         precmd() { print -Pn '\e];%n (%~) - Terminal\a' } ;;
 esac
 # }}}
