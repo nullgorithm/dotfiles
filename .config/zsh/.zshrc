@@ -270,6 +270,10 @@ if [[ -n $terminfo[kRIT] ]]; then
     bindkey          "$terminfo[kRIT]"  forward-word
     bindkey -M vicmd "$terminfo[kRIT]"  forward-word
 fi
+# ctrl-left
+bindkey              '^[[1;5D'          vi-backward-blank-word
+# ctrl-right
+bindkey              '^[[1;5C'          vi-forward-blank-word
 # no vi-backward-kill-word
 bindkey              '^W'               backward-kill-word
 # h and l whichwrap
