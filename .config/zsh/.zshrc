@@ -262,13 +262,13 @@ if [[ -n $terminfo[kcuf1] ]]; then
 fi
 # shift-left
 if [[ -n $terminfo[kLFT] ]]; then
-    bindkey          "$terminfo[kLFT]"  backward-word
-    bindkey -M vicmd "$terminfo[kLFT]"  backward-word
+    bindkey          "$terminfo[kLFT]"  vi-backward-word
+    bindkey -M vicmd "$terminfo[kLFT]"  vi-backward-word
 fi
 # shift-right
 if [[ -n $terminfo[kRIT] ]]; then
-    bindkey          "$terminfo[kRIT]"  forward-word
-    bindkey -M vicmd "$terminfo[kRIT]"  forward-word
+    bindkey          "$terminfo[kRIT]"  vi-forward-word
+    bindkey -M vicmd "$terminfo[kRIT]"  vi-forward-word
 fi
 # ctrl-left
 bindkey              '^[[1;5D'          vi-backward-blank-word
