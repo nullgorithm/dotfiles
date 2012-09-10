@@ -148,6 +148,11 @@ for_window [class="mplayer2"] floating enable
 for_window [class="Firefox"] floating enable
 for_window [class="Firefox" instance="Navigator"] floating disable
 
+# class border background text
+client.focused #506070 #506070 #dcdccc
+client.focused_inactive #2b2b2b #2b2b2b #dcdccc
+client.unfocused #1f1f1f #1f1f1f #dcdccc
+client.urgent #cc9393 #cc9393 #dcdccc
 client.background #3f3f3f
 
 bar {
