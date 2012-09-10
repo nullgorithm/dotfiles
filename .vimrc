@@ -9,7 +9,6 @@ set whichwrap+=<,>,[,],h,l
 set display=lastline
 set virtualedit=block
 set scrolloff=3
-set laststatus=2
 " no bells!
 set noerrorbells visualbell t_vb=
 " text wrapping
@@ -81,6 +80,10 @@ nn <F6> :setlocal spell! spell?<CR>
 if has('mouse')
     set mouse=a
 endif
+
+" statusline
+set laststatus=2
+let Powerline_symbols = 'fancy'
 
 if has ('gui_running')
     " autoselect, console dialogs, don't source menu.vim
