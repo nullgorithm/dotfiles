@@ -83,7 +83,8 @@ endif
 
 " statusline
 set laststatus=2
-let Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
+let g:Powerline_colorscheme = 'zenburn'
 
 if has ('gui_running')
     " autoselect, console dialogs, don't source menu.vim
