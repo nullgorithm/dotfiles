@@ -1,5 +1,3 @@
-Xcursor.theme:           Vanilla-DMZ-AA
-
 ! fonts (match fontconfig settings)
 Xft.antialias:           1
 Xft.autohint:            0
