@@ -4,7 +4,6 @@ quiet=1
 lirc=0
 
 # video
-#vo=vdpau,xv
 vo=xv
 monitoraspect=16:9
 double=yes
