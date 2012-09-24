@@ -7,8 +7,8 @@ umask 077
 # constant environment variables {{{
 export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/bin"
 
-export EDITOR=/usr/bin/vim \
-  VISUAL=/usr/bin/vim \
+export EDITOR=vim \
+  VISUAL=vim \
   PAGER=less \
   TERMINAL=termite
 
