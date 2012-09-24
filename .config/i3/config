@@ -17,7 +17,7 @@ font xft:Terminus 12px
 floating_modifier $mod
 
 # exec bindings
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+B exec firefox
 bindsym $mod+p exec dmenu_run -fn '-*terminus-*-*-*-*-*-*-*-*-*-iso10646-*' -nf '#dcdccc' -nb '#1f1f1f' -sf '#1f1f1f' -sb '#dcdccc'
 bindsym $mod+g exec gvim

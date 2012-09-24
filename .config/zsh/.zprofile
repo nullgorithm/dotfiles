@@ -9,7 +9,8 @@ export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/bin"
 
 export EDITOR=/usr/bin/vim \
   VISUAL=/usr/bin/vim \
-  PAGER=less
+  PAGER=less \
+  TERMINAL=termite
 
 # man page colors in less
 export LESS_TERMCAP_mb=$'\E[01;31m'
