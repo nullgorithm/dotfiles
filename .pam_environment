@@ -1,0 +1,4 @@
+EDITOR=vim
+VISUAL=vim
+PAGER=less
+TERMINAL=termite
