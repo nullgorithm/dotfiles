@@ -9,6 +9,7 @@ set whichwrap+=<,>,[,],h,l
 set display=lastline
 set virtualedit=block
 set scrolloff=3
+set laststatus=2
 " no bells!
 set noerrorbells visualbell t_vb=
 " text wrapping
@@ -76,11 +77,6 @@ if has('mouse')
     set mouse=a
 endif
 
-" statusline
-set laststatus=2
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_colorscheme = 'zenburn'
-
 if has ('gui_running')
     " autoselect, console dialogs, don't source menu.vim
     set guioptions=acM
@@ -97,6 +93,8 @@ set background=dark
 if has ('gui_running') || &t_Co > 255
     colorscheme zenburn
     set cursorline
+    let g:Powerline_symbols = 'fancy'
+    let g:Powerline_colorscheme = 'zenburn'
 endif
 
 if has ('gui_running') || &t_Co > 2
