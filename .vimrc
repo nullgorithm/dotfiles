@@ -48,12 +48,7 @@ set showmode showcmd ruler
 set expandtab softtabstop=2 shiftwidth=2
 set cinoptions=(0
 
-" 4 space indents for python
-autocmd FileType python setlocal sts=4 sw=4
-
 autocmd FileType conque_term setlocal nocursorline
-autocmd FileType go setlocal noet sts=0 ts=8 sw=8
-autocmd FileType gitconfig setlocal noet sts=0 ts=8 sw=8
 autocmd FileType c let g:clang_user_options = "-std=c11 2>/dev/null || exit 0"
 autocmd FileType cpp let g:clang_user_options = "-std=c++11 2>/dev/null || exit 0"
 
