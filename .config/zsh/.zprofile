@@ -42,7 +42,7 @@ export GTK2_RC_FILES=~/.gtkrc-2.0
 
 # colors
 export GREP_OPTIONS='--color=auto'
-eval $(dircolors -b)
+eval $(dircolors -b ~/.config/dircolors)
 
 # set path to mpd socket
 export MPD_HOST=~/music/socket
