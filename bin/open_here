@@ -5,9 +5,10 @@
 
 set -o errexit -o nounset -o pipefail
 
-(( $# == 1 ))
+(( $# ))
 
-xid=$(xprop -root | awk '/^_NET_ACTIVE_WINDOW/ { print $NF; }') || false
+xid=$(xprop -root | awk '/^_NET_ACTIVE_WINDOW/ { print $NF }') || false
 pid=$(xprop -id $xid | awk '/^_NET_WM_PID/ { print $NF }') || false
-cd $(readlink /proc/$pid/cwd)
-$1
+dir=$(readlink /proc/$pid/cwd) || false
+cd $dir
+exec $@
