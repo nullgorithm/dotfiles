@@ -11,3 +11,8 @@
 
 [apply]
 	whitespace = fix
+
+[log]
+	decorate=full
+
+# vim: ft=gitconfig
