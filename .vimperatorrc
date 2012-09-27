@@ -1,3 +1,4 @@
+set! browser.fullscreen.autohide=false
 set! browser.tabs.closeButtons=2
 
 map s :open google 
