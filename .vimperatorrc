@@ -4,4 +4,5 @@ set! browser.tabs.closeButtons=2
 map s :open google 
 map S :tabopen google 
 
+set tabnumbers
 set noscrollbars
