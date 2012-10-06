@@ -110,6 +110,7 @@ alias pu='pushd'
 alias po='popd'
 alias rh=rehash
 alias dirs='dirs -p'
+alias weechat-curses='dtach -A $XDG_RUNTIME_DIR/weechat weechat-curses'
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 # vim
