@@ -119,10 +119,6 @@ if ! $isroot; then
     alias visudo="sudo VISUAL='$VISUAL' visudo"
     alias vipw="sudo VISUAL='$VISUAL' vipw"
     alias vigr="sudo VISUAL='$VISUAL' vigr"
-else
-    alias visudo="VISUAL='$VISUAL' visudo"
-    alias vipw="VISUAL='$VISUAL' vipw"
-    alias vigr="VISUAL='$VISUAL' vigr"
 fi
 
 if ! $isroot; then
