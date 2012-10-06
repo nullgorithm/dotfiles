@@ -119,12 +119,10 @@ if ! $isroot; then
     alias visudo="sudo VISUAL='$VISUAL' visudo"
     alias vipw="sudo VISUAL='$VISUAL' vipw"
     alias vigr="sudo VISUAL='$VISUAL' vigr"
-    alias crontab="sudo EDITOR='$VISUAL' crontab"
 else
     alias visudo="VISUAL='$VISUAL' visudo"
     alias vipw="VISUAL='$VISUAL' vipw"
     alias vigr="VISUAL='$VISUAL' vigr"
-    alias crontab="EDITOR='$VISUAL' crontab"
 fi
 
 if ! $isroot; then
