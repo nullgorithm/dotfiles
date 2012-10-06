@@ -116,9 +116,9 @@ alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias vim='vim -p'
 alias gvim='gvim -p'
 if ! $isroot; then
-    alias visudo="sudo VISUAL='$VISUAL' visudo"
-    alias vipw="sudo VISUAL='$VISUAL' vipw"
-    alias vigr="sudo VISUAL='$VISUAL' vigr"
+    alias visudo="sudo EDITOR='$EDITOR' visudo"
+    alias vipw="sudo EDITOR='$EDITOR' vipw"
+    alias vigr="sudo EDITOR='$EDITOR' vigr"
 fi
 
 if ! $isroot; then
