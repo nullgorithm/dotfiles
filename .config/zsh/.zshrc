@@ -39,7 +39,7 @@ setopt nobeep \
     promptsubst \
     completealiases
 # input with no command
-READNULLCMD=$MANPAGER
+READNULLCMD=$PAGER
 # history
 HISTFILE=$ZDOTDIR/.zsh_history
 HISTSIZE=5000
