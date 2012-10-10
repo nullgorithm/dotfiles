@@ -102,6 +102,7 @@ alias chgrp='chgrp -c --preserve-root'
 alias rmdir='rmdir -v'
 alias mkdir='mkdir -vp'
 alias cling='cling --nologo -std=c++11'
+alias gdb='gdb -q'
 alias p=pacman
 alias shred='shred -uzvn 10'
 alias ll='ls -l'
