@@ -42,7 +42,7 @@ setopt nobeep \
 READNULLCMD=$PAGER
 # history
 HISTFILE=$ZDOTDIR/.zsh_history
-HISTSIZE=5000
+HISTSIZE=10000
 SAVEHIST=$HISTSIZE
 DIRSTACKSIZE=20
 # logout of root shell after 180 seconds
