@@ -51,5 +51,5 @@ export PYTHONSTARTUP=~/.config/pythonrc
 # }}}
 
 if (( UID )); then
-  (( $(fgconsole 2>/dev/null) == 1 )) && exec xinit ~/.config/xinitrc -- -nolisten tcp vt1 &> ~/.xlog
+  [[ $(fgconsole 2>/dev/null) == 1 ]] && exec xinit ~/.config/xinitrc -- -nolisten tcp vt1 &> ~/.xlog
 fi
