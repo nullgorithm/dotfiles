@@ -143,7 +143,7 @@ if ! $isroot; then
     alias mutt="mutt -F ~/.config/mutt/muttrc"
     # sudo apps
     for app in \
-        powertop nmap rc.d iptables arptables pwck grpck updatedb
+        powertop nmap iptables arptables pwck grpck updatedb
     do
         alias $app="sudo $app"
     done
