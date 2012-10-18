@@ -7,6 +7,7 @@ have() { which $1 &>/dev/null || return 1 }
 # modules {{{
 autoload -U compinit \
     edit-command-line \
+    vcs_info \
     zmv
 compinit
 zle -N edit-command-line
@@ -65,7 +66,18 @@ zstyle ':completion:*' ignore-parents parent pwd
 compdef _pacman pacman-color=pacman
 # }}}
 
+# title (for vte, xterm and rxvt) {{{
+case "$TERM" in
+    vte*|xterm*|rxvt*)
+        update_title() { print -Pn '\e];%n (%~) - Terminal\a' } ;;
+    *)
+        update_title() {} ;;
+esac
+# }}}
+
 # prompt {{{
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*' formats "%F{green}%b%f"
 # initialize vimode (stops linux console glitch)
 vimode=i
 # set vimode to current editing mode
@@ -76,9 +88,9 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 if $isroot; then
-    PROMPT='%K{red}%n@%m%k %F{green}${vimode}%f %B%F{cyan}%~%b%f %B%F{white}%# %b%f'
+    PROMPT='%K{red}%n@%m%k %F{magenta}${vimode}%f %B%F{cyan}%~%b%f ${vcs_info_msg_0_} %B%F{white}%# %b%f'
 else
-    PROMPT='%K{blue}%n@%m%k %F{green}${vimode}%f %B%F{cyan}%~%b%f %B%F{white}%# %b%f'
+    PROMPT='%K{blue}%n@%m%k %F{magenta}${vimode}%f %B%F{cyan}%~%b%f ${vcs_info_msg_0_} %B%F{white}%# %b%f'
 fi
 # }}}
 
@@ -146,6 +158,11 @@ fi
 # }}}
 
 # functions {{{
+precmd() {
+  update_title
+  vcs_info
+}
+
 # bg on empty line, push-input on non-empty line
 fancy-ctrl-z () {
     if [[ $#BUFFER -eq 0 ]]; then
@@ -284,13 +301,6 @@ bindkey -M vicmd     'v'                edit-command-line
 # fancy <C-z>
 bindkey              '^Z'               fancy-ctrl-z
 bindkey -M vicmd     '^Z'               fancy-ctrl-z
-# }}}
-
-# title (for vte, xterm and rxvt) {{{
-case "$TERM" in
-    vte*|xterm*|rxvt*)
-        precmd() { print -Pn '\e];%n (%~) - Terminal\a' } ;;
-esac
 # }}}
 
 # cleanup {{{
