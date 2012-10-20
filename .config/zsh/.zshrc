@@ -161,7 +161,7 @@ precmd() {
 }
 
 # bg on empty line, push-input on non-empty line
-fancy-ctrl-z () {
+fancy-ctrl-z() {
     if [[ $#BUFFER -eq 0 ]]; then
         bg
         zle redisplay
