@@ -74,7 +74,7 @@ esac
 
 # prompt {{{
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git*' formats "%F{green}%b%f"
+zstyle ':vcs_info:git*' formats "%F{green}%b%f "
 # initialize vimode (stops linux console glitch)
 vimode=i
 # set vimode to current editing mode
@@ -85,9 +85,9 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 if $isroot; then
-    PROMPT='%K{red}%n@%m%k %F{magenta}${vimode}%f %B%F{cyan}%~%b%f ${vcs_info_msg_0_} %B%F{white}%# %b%f'
+    PROMPT='%K{red}%n@%m%k %F{magenta}${vimode}%f %B%F{cyan}%~%b%f ${vcs_info_msg_0_}%B%F{white}%# %b%f'
 else
-    PROMPT='%K{blue}%n@%m%k %F{magenta}${vimode}%f %B%F{cyan}%~%b%f ${vcs_info_msg_0_} %B%F{white}%# %b%f'
+    PROMPT='%K{blue}%n@%m%k %F{magenta}${vimode}%f %B%F{cyan}%~%b%f ${vcs_info_msg_0_}%B%F{white}%# %b%f'
 fi
 # }}}
 
