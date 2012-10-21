@@ -155,6 +155,14 @@ fi
 # }}}
 
 # functions {{{
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+
+  chpwd() {
+    __vte_ps1
+  }
+fi
+
 precmd() {
   update_title
   vcs_info
