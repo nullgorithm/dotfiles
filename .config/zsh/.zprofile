@@ -51,5 +51,5 @@ export PYTHONSTARTUP=~/.config/pythonrc
 # }}}
 
 if (( UID )); then
-  [[ -z $DISPLAY ]] && exec startx &> ~/.xlog
+  [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx &> ~/.xlog
 fi
