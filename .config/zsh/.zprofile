@@ -37,8 +37,8 @@ export WINEDLLOVERRIDES='winemenubuilder.exe=d'
 # turn on font antialiasing in java
 export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=lcd
 
-# export gtkrc location for qt
-export GTK2_RC_FILES=~/.gtkrc-2.0
+# set location of gtk2 gtkrc (also needed for Qt's gtk style)
+export GTK2_RC_FILES=~/.config/gtk-2.0/gtkrc
 
 # colors
 export GREP_OPTIONS='--color=auto'
