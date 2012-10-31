@@ -25,15 +25,6 @@ export GZIP=-9 \
   BZIP=-9 \
   XZ_OPT=-9
 
-# use a 32-bit wine prefix
-export WINEARCH=win32
-
-# disable wine debug messages
-export WINEDEBUG=-all
-
-# disable wine desktop integration (menu items, desktop links, mimetypes)
-export WINEDLLOVERRIDES='winemenubuilder.exe=d'
-
 # turn on font antialiasing in java
 export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=lcd
 

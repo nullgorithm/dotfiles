@@ -2,3 +2,12 @@ EDITOR=vim
 VISUAL=vim
 PAGER=less
 TERMINAL=termite
+
+# use a 32-bit wine prefix
+WINEARCH=win32
+
+# disable wine debug messages
+WINEDEBUG=-all
+
+# disable wine desktop integration (menu items, desktop links, mimetypes)
+WINEDLLOVERRIDES=winemenubuilder.exe=d
