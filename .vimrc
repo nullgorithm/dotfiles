@@ -10,6 +10,7 @@ set display=lastline
 set virtualedit=block
 set scrolloff=3
 set laststatus=2
+set foldmethod=marker
 " no bells!
 set noerrorbells visualbell t_vb=
 " text wrapping
