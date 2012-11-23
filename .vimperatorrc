@@ -1,5 +1,6 @@
 set! browser.fullscreen.autohide=false
 set! browser.tabs.closeButtons=2
+set! plugins.click_to_play=true
 
 map s :open google 
 map S :tabopen google 
