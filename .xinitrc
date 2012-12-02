@@ -7,7 +7,10 @@ if [[ -d /etc/X11/xinit/xinitrc.d ]]; then
   unset f
 fi
 
-mkdir -p /tmp/{adobe,macromedia}-$USER
+mkdir -p $XDG_RUNTIME_DIR/{adobe,macromedia}
+ln -sf $XDG_RUNTIME_DIR/adobe ~/.adobe
+ln -sf $XDG_RUNTIME_DIR/macromedia ~/.macromedia
+
 synclient HorizTwoFingerScroll=1
 xset -b
 setxkbmap -option ctrl:nocaps
