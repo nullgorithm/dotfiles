@@ -1,13 +1,13 @@
-#!/bin/sh
+#!/bin/zsh
 
-if [ -d /etc/X11/xinit/xinitrc.d ]; then
+if [[ -d /etc/X11/xinit/xinitrc.d ]]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do
-    [ -x "$f" ] && . "$f"
+    [[ -x $f ]] && . $f
   done
   unset f
 fi
 
-mkdir -p /tmp/adobe-$USER /tmp/macromedia-$USER
+mkdir -p /tmp/{adobe,macromedia}-$USER
 synclient HorizTwoFingerScroll=1
 xset -b
 setxkbmap -option ctrl:nocaps
