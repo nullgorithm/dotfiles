@@ -63,9 +63,6 @@ set ignorecase
 set smartcase
 set wrapscan
 
-" detect filetype and use appropriate indenting and plugins
-filetype indent plugin on
-
 let mapleader = ","
 
 " F5 toggles paste mode
@@ -108,3 +105,6 @@ if has ('gui_running') || &t_Co > 2
     autocmd InsertLeave * match ExtraWhitespace /\s\+$/
     autocmd BufWinLeave * call clearmatches()
 endif
+
+" detect filetype and use appropriate indenting and plugins
+filetype indent plugin on
