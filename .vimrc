@@ -1,7 +1,7 @@
 " general
 set nocompatible
 set spelllang=en_ca
-set history=500
+set history=1000
 set backspace=indent,eol,start
 set number
 set autoread
