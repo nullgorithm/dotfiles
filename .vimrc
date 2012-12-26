@@ -65,8 +65,8 @@ set wrapscan
 
 let mapleader = ","
 
-" F5 toggles paste mode
-set pastetoggle=<F5>
+" F4 toggles paste mode
+set pastetoggle=<F4>
 
 " F6 toggles spell checking
 nn <F6> :setlocal spell! spell?<CR>
