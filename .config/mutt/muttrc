@@ -21,6 +21,7 @@ set header_cache = ~/.cache/mutt
 set message_cachedir = ~/.cache/mutt
 
 set smtp_url = "smtps://danielmicay@smtp.gmail.com:465/"
+set from = danielmicay@gmail.com
 set realname = "Daniel Micay"
 
 set sort = threads
