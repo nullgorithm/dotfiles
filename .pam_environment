@@ -11,3 +11,6 @@ WINEDEBUG=-all
 
 # disable wine desktop integration (menu items, desktop links, mimetypes)
 WINEDLLOVERRIDES=winemenubuilder.exe=d
+
+GREP_OPTIONS=--color=auto
+LESS=-R

@@ -16,9 +16,8 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-# disable less history file and display color control sequences as colors
-export LESSHISTFILE=- \
-  LESS=-R
+# disable less history file
+export LESSHISTFILE=-
 
 # highest compression
 export GZIP=-9 \
@@ -32,7 +31,6 @@ export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=lcd
 export GTK2_RC_FILES=~/.config/gtk-2.0/gtkrc
 
 # colors
-export GREP_OPTIONS='--color=auto'
 eval $(dircolors -b ~/.config/dircolors)
 
 # set path to mpd socket
