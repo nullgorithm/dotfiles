@@ -11,6 +11,7 @@ unset imap_passive
 set imap_keepalive = 300
 set mail_check = 120
 set ssl_force_tls
+unset record # gmail already saves sent mail
 
 set spoolfile = +INBOX
 mailboxes = +INBOX
