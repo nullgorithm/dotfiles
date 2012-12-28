@@ -1,4 +1,5 @@
 source /etc/Muttrc.gpg.dist
+set crypt_autosign # sign all outgoing messages
 
 set nohelp
 
