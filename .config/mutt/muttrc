@@ -1,5 +1,7 @@
 source /etc/Muttrc.gpg.dist
 
+set nohelp
+
 set folder = imaps://imap.gmail.com/
 set imap_user = danielmicay@gmail.com
 unset imap_passive
