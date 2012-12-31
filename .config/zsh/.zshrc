@@ -120,6 +120,7 @@ alias po=popd
 alias rh=rehash
 alias dirs='dirs -p'
 alias weechat-curses='dtach -A $XDG_RUNTIME_DIR/weechat weechat-curses'
+alias mutt='dtach -A $XDG_RUNTIME_DIR/mutt mutt -F ~/.config/mutt/muttrc'
 
 # vim
 alias vim='vim -p'
@@ -135,7 +136,6 @@ if ! $isroot; then
     # general
     [[ -n $DISPLAY ]] || alias mplayer='mplayer -vo fbdev'
     alias ncmpc=ncmpcpp
-    alias mutt="mutt -F ~/.config/mutt/muttrc"
     # sudo apps
     for app in \
         powertop nmap iptables arptables pwck grpck updatedb
