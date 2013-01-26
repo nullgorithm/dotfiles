@@ -43,8 +43,6 @@ HISTFILE=$ZDOTDIR/.zsh_history
 HISTSIZE=10000
 SAVEHIST=$HISTSIZE
 DIRSTACKSIZE=20
-# logout of root shell after 180 seconds
-$isroot && TMOUT=180
 # }}}
 
 # completion style {{{
