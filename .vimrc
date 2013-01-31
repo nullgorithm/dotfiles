@@ -35,7 +35,7 @@ set completeopt=menu
 let g:clang_use_library = 1
 let g:clang_complete_auto = 0
 let g:clang_periodic_quickfix = 1
-let g:clang_library_path = "/usr/lib"
+"let g:clang_library_path = "/usr/lib"
 
 " command-line completion
 set wildmenu wildmode=list:longest,full
