@@ -95,6 +95,10 @@ if has ('gui_running') || &t_Co > 255
     let g:Powerline_colorscheme = 'zenburn'
 endif
 
+if has('gui_running') == 0 && &t_Co > 255
+    let g:zenburn_transparent = 1
+endif
+
 if has ('gui_running') || &t_Co > 2
     syntax on
     " highlight trailing whitespace, except when typing at eol
