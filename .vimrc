@@ -27,16 +27,6 @@ endif
 " % matches on if/else, tags, etc.
 runtime macros/matchit.vim
 
-" insert-mode completion
-let g:SuperTabDefaultCompletionType = "context"
-" no completion previews
-set completeopt=menu
-
-let g:clang_use_library = 1
-let g:clang_complete_auto = 0
-let g:clang_periodic_quickfix = 1
-"let g:clang_library_path = "/usr/lib"
-
 " command-line completion
 set wildmenu wildmode=list:longest,full
 
@@ -51,8 +41,6 @@ set expandtab softtabstop=2 shiftwidth=2
 set cinoptions=(0
 
 autocmd FileType conque_term setlocal nocursorline
-autocmd FileType c let g:clang_user_options = "-std=c11 2>/dev/null || exit 0"
-autocmd FileType cpp let g:clang_user_options = "-std=c++11 2>/dev/null || exit 0"
 
 autocmd FileType rst,markdown setl textwidth=79
 
