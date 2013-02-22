@@ -98,6 +98,8 @@ if has ('gui_running') || &t_Co > 2
     autocmd BufWinLeave * call clearmatches()
 endif
 
+let g:no_rust_conceal = 1
+
 " detect filetype and use appropriate indenting and plugins
 filetype indent plugin on
 
