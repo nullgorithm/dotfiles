@@ -15,7 +15,7 @@
 	whitespace = fix
 
 [log]
-	decorate=full
+	decorate = full
 
 [push]
 	default = simple
