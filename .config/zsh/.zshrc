@@ -57,8 +57,6 @@ zstyle ':completion:*:processes-names' command 'ps -eo comm'
 zstyle ':completion:*' use-cache on
 # don't complete working directory in parent
 zstyle ':completion:*' ignore-parents parent pwd
-# completion for pacman-color
-compdef _pacman pacman-color=pacman
 # }}}
 
 # title (for vte, xterm and rxvt) {{{
@@ -90,7 +88,6 @@ fi
 # }}}
 
 # aliases {{{
-have pacman-color && alias pacman=pacman-color
 have colordiff && alias diff=colordiff
 alias ls='ls -Ah --color=auto'
 alias df='df -h'
