@@ -1,7 +1,6 @@
 set! browser.fullscreen.autohide=false
 set! browser.tabs.closeButtons=2
 set! middlemouse.contentLoadURL=false
-set! plugins.click_to_play=true
 set! view_source.editor.external=true
 set! view_source.editor.path=/usr/bin/gvim
 set! view_source.editor.args=-R
