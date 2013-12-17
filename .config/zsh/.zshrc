@@ -107,7 +107,6 @@ alias rmdir='rmdir -v'
 alias mkdir='mkdir -vp'
 alias cling='cling --nologo -std=c++11'
 alias gdb='gdb -q'
-alias p=pacman
 alias ll='ls -l'
 alias rr='rm -r'
 alias pu=pushd
@@ -128,9 +127,6 @@ fi
 
 if ! $isroot; then
     alias sudo="sudo "
-    # general
-    [[ -n $DISPLAY ]] || alias mplayer='mplayer -vo fbdev'
-    alias ncmpc=ncmpcpp
     # sudo apps
     for app in \
         powertop nmap iptables arptables pwck grpck updatedb
