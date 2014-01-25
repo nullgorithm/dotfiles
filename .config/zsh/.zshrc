@@ -144,7 +144,7 @@ fi
 # }}}
 
 # functions {{{
-if [[ $TERM == xterm-termite ]]; then
+if [[ -n $VTE_VERSION ]]; then
   . /etc/profile.d/vte.sh
   __vte_osc7
 fi
