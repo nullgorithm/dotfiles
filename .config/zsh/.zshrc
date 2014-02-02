@@ -133,13 +133,6 @@ if ! $isroot; then
     do
         alias $app="sudo $app"
     done
-    # sudo guis
-    alias gparted='sudo -b gparted &>/dev/null'
-    alias zenmap='sudo -b zenmap &>/dev/null'
-else
-    # root guis
-    alias gparted='gparted &>/dev/null &'
-    alias zenmap='zenmap &>/dev/null &'
 fi
 # }}}
 
