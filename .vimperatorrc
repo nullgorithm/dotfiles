@@ -10,3 +10,4 @@ map S :tabopen google
 
 set tabnumbers
 set noscrollbars
+set gui=none,tabs
