@@ -37,6 +37,7 @@ eval $(dircolors -b ~/.config/dircolors)
 export MPD_HOST=~/music/socket
 
 export PYTHONSTARTUP=~/.config/pythonrc
+export MPV_HOME=~/.config/mpv
 # }}}
 
 if (( UID )); then
