@@ -2,7 +2,7 @@ EDITOR=vim
 VISUAL=vim
 PAGER=less
 TERMINAL=termite
-BROWSER=firefox
+BROWSER=chromium
 
 # use a 32-bit wine prefix
 WINEARCH=win32
