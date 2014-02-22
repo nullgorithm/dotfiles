@@ -19,7 +19,7 @@ floating_modifier Mod4
 bindsym Mod4+Return exec i3-sensible-terminal
 bindsym Mod4+o exec open_here i3-sensible-terminal
 bindsym Mod4+B exec chromium
-bindsym Mod4+p exec --no-startup-id dmenu_run -fn '-*terminus-*-*-*-*-*-*-*-*-*-iso10646-*' -nf '#dcdccc' -nb '#1f1f1f' -sf '#1f1f1f' -sb '#dcdccc'
+bindsym Mod4+p exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn '-*terminus-*-*-*-*-*-*-*-*-*-iso10646-*' -nf '#dcdccc' -nb '#1f1f1f' -sf '#1f1f1f' -sb '#dcdccc'"
 bindsym Mod4+g exec gvim
 bindsym Mod4+M exec amixer -q set Master toggle
 bindsym XF86AudioLowerVolume exec amixer -q set Master 1%-
