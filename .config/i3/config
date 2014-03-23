@@ -146,8 +146,6 @@ bindsym Mod4+r mode "resize"
 new_window 1pixel
 
 for_window [class="mplayer2"] floating enable
-for_window [class="Firefox"] floating enable
-for_window [class="Firefox" instance="Navigator"] floating disable
 
 # class border background text
 client.focused #506070 #506070 #dcdccc
