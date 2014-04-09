@@ -5,7 +5,7 @@ have() { which $1 &>/dev/null || return 1 }
 umask 077
 
 # constant environment variables {{{
-export CHROMIUM_USER_FLAGS='--password-store=gnome --enable-print-preview --ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so --ppapi-flash-version=12.0.0.77'
+export CHROMIUM_USER_FLAGS='--password-store=gnome --enable-print-preview --ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so --ppapi-flash-version=13.0.0.182'
 export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/.local/bin"
 
 # man page colors in less
