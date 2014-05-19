@@ -15,9 +15,6 @@ search_wrap = true
 #icon_name = terminal
 #geometry = 640x480
 
-# 0.0: opaque, 1.0: transparent
-transparency = 0.0
-
 # "system", "on" or "off"
 cursor_blink = system
 
@@ -30,6 +27,12 @@ cursor_shape = block
 # word characters used for word selection
 # (default if unset: all graphic non-punctuation/space characters)
 #word_chars = -A-Za-z0-9,./?%&#:_=+@~
+
+# set size hints for the window
+#size_hints = false
+
+# emit escape sequences for other keys modified by Control
+#modify_other_keys = false
 
 [colors]
 foreground = #dcdccc
@@ -68,4 +71,4 @@ color15 = #ffffff
 #border_width = 0.5
 #roundness = 2.0
 
-# vim: ft=dosini
+# vim: ft=dosini cms=#%s
