@@ -21,9 +21,9 @@ bindsym Mod4+o exec open_here i3-sensible-terminal
 bindsym Mod4+B exec chromium
 bindsym Mod4+p exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn '-*terminus-*-*-*-*-*-*-*-*-*-iso10646-*' -nf '#dcdccc' -nb '#1f1f1f' -sf '#1f1f1f' -sb '#dcdccc'"
 bindsym Mod4+g exec gvim
-bindsym Mod4+M exec --no-startup-id amixer -q set Master toggle
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 1%-
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 1%+
+bindsym Mod4+M exec --no-startup-id ponymix toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id ponymix decrease 1
+bindsym XF86AudioRaiseVolume exec --no-startup-id ponymix increase 1
 bindsym Mod4+u exec sh -c 'chromium $(xclip -out)'
 
 # kill focused window
@@ -170,3 +170,4 @@ bar {
 
 exec --no-startup-id xss-lock -- i3lock -c 000000 -n
 exec --no-startup-id nm-applet
+exec --no-startup-id start-pulseaudio-x11
