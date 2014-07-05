@@ -155,7 +155,7 @@ client.urgent #cc9393 #cc9393 #dcdccc
 client.background #3f3f3f
 
 bar {
-    font -*terminus-*-*-*-*-*-*-*-*-*-iso10646-*
+    font pango:Terminus 12px
     position top
     colors {
         background #3f3f3f
