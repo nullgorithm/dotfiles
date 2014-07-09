@@ -15,5 +15,3 @@ WINEDLLOVERRIDES=winemenubuilder.exe=d
 
 GREP_OPTIONS=--color=auto
 LESS=-R
-
-SDL_AUDIODRIVER=alsa
