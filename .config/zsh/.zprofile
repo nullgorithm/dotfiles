@@ -1,6 +1,3 @@
-# test if command is available
-have() { which $1 &>/dev/null || return 1 }
-
 # set secure umask
 umask 077
 
