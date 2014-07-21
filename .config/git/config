@@ -22,3 +22,10 @@
 
 [diff]
 	tool = vimdiff
+
+[sendemail]
+	from = Daniel Micay <danielmicay@gmail.com>
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpuser = danielmicay@gmail.com
