@@ -13,6 +13,5 @@ synclient HorizTwoFingerScroll=1
 xset -b
 setxkbmap -option ctrl:nocaps
 setxkbmap -option shift:both_shiftlock
-xmodmap -e "keycode 135 = Super_R"
 hsetroot -full ~/images/background.png
 exec i3
