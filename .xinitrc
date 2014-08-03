@@ -13,5 +13,5 @@ synclient HorizTwoFingerScroll=1
 xset -b
 setxkbmap -option ctrl:nocaps
 setxkbmap -option shift:both_shiftlock
-hsetroot -full ~/images/background.png
+gm display -window root ~/images/background.png
 exec i3
