@@ -287,6 +287,8 @@ bindkey              '^Z'               fancy-ctrl-z
 bindkey -M vicmd     '^Z'               fancy-ctrl-z
 # }}}
 
+. /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # cleanup {{{
 unset isroot app
 # }}}
