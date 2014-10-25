@@ -113,8 +113,7 @@ alias pu=pushd
 alias po=popd
 alias rh=rehash
 alias dirs='dirs -p'
-alias weechat-curses='dtach -A $XDG_RUNTIME_DIR/weechat weechat-curses'
-alias mutt='dtach -A $XDG_RUNTIME_DIR/mutt mutt -F ~/.config/mutt/muttrc'
+alias mutt='mutt -F ~/.config/mutt/muttrc'
 
 # vim
 alias vim='vim -p'
