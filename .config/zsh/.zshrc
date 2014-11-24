@@ -90,6 +90,7 @@ fi
 # aliases {{{
 have colordiff && alias diff=colordiff
 alias ls='ls -Ah --color=auto'
+alias grep='grep --color=auto'
 alias df='df -h'
 alias du='du -h'
 alias free='free -m'
