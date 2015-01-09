@@ -1,3 +1,5 @@
+set colored-stats on
+set menu-complete-display-prefix on
 set show-all-if-ambiguous on
 
 set editing-mode vi
@@ -11,3 +13,5 @@ set keymap vi-command
 set keymap vi-insert
 "\e[A":history-search-backward
 "\e[B":history-search-forward
+TAB:menu-complete
+"\e[Z":menu-complete-backward
