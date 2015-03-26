@@ -29,3 +29,5 @@
 	smtpserver = smtp.gmail.com
 	smtpserverport = 587
 	smtpuser = danielmicay@gmail.com
+[http]
+	cookiefile = /home/strcat/.config/git/cookies
