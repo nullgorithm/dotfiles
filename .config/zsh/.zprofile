@@ -2,7 +2,7 @@
 umask 077
 
 # constant environment variables {{{
-export CHROMIUM_USER_FLAGS='--password-store=gnome --ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so --ppapi-flash-version=16.0.0.305'
+export CHROMIUM_USER_FLAGS='--password-store=gnome'
 export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/.local/bin"
 
 # man page colors in less
