@@ -1,9 +1,7 @@
 [options]
-resize_grip = false
 scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
-visible_bell = false
 mouse_autohide = false
 allow_bold = true
 dynamic_title = true
@@ -22,11 +20,7 @@ cursor_blink = system
 cursor_shape = block
 
 # $BROWSER is used by default
-#browser = firefox
-
-# word characters used for word selection
-# (default if unset: all graphic non-punctuation/space characters)
-#word_chars = -A-Za-z0-9,./?%&#:_=+@~
+#browser = chromium
 
 # set size hints for the window
 #size_hints = false
@@ -35,11 +29,13 @@ cursor_shape = block
 #modify_other_keys = false
 
 [colors]
+#cursor = #dcdccc
 foreground = #dcdccc
 foreground_bold = #ffffff
-#foreground_dim = #888888
 background = #3f3f3f
-#cursor = #dcdccc
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
 
 # if unset, will reverse foreground and background
 highlight = #2f2f2f
@@ -66,6 +62,8 @@ color15 = #ffffff
 #font = Monospace 12
 #foreground = #dcdccc
 #background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
 #padding = 2
 #border = #3f3f3f
 #border_width = 0.5
