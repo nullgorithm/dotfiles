@@ -2,7 +2,6 @@
 umask 077
 
 # constant environment variables {{{
-export CHROMIUM_USER_FLAGS='--password-store=gnome'
 export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/.local/bin"
 
 # man page colors in less
