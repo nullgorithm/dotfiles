@@ -35,6 +35,9 @@ export MPD_HOST=~/music/socket
 
 export PYTHONSTARTUP=~/.config/pythonrc
 export MPV_HOME=~/.config/mpv
+
+# NVIDIA shader cache
+export __GL_SHADER_DISK_CACHE_PATH=~/.cache/nv
 # }}}
 
 if (( UID )); then
