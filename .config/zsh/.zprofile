@@ -2,7 +2,8 @@
 umask 077
 
 # constant environment variables {{{
-export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/.local/bin"
+export PATH="/usr/lib/colorgcc/bin:$PATH:$HOME/.local/bin:$HOME/.gem/ruby/2.2.0/bin"
+export BUNDLE_PATH="$HOME/.gem"
 
 # man page colors in less
 export LESS_TERMCAP_mb=$'\E[01;31m'
