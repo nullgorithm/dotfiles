@@ -129,7 +129,7 @@ if ! $isroot; then
     alias sudo="sudo "
     # sudo apps
     for app in \
-        powertop nmap iptables arptables pwck grpck updatedb
+        powertop nmap pwck grpck updatedb
     do
         alias $app="sudo $app"
     done
