@@ -3,6 +3,7 @@ umask 077
 
 # constant environment variables {{{
 export PATH="$PATH:$HOME/.local/bin:$HOME/.gem/ruby/2.2.0/bin"
+export PATH="$PATH:$HOME/projects/copperhead/copperheados/depot_tools"
 export BUNDLE_PATH="$HOME/.gem"
 
 # man page colors in less
