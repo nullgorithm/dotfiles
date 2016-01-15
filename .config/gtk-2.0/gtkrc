@@ -1,7 +1,7 @@
 gtk-theme-name="Adwaita"
 gtk-icon-theme-name="Faenza"
 gtk-key-theme-name="Emacs"
-gtk-font-name="Source Sans Pro 10"
+gtk-font-name="Source Sans Pro 8"
 gtk-toolbar-style=2
 gtk-recent-files-max-age=0
 

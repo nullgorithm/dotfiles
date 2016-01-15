@@ -9,7 +9,7 @@
 # layout, use the i3-config-wizard
 #
 
-font pango:Terminus 12px
+font pango:Source Code Pro 8
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -161,7 +161,7 @@ client.urgent #cc9393 #cc9393 #dcdccc
 client.background #3f3f3f
 
 bar {
-    font pango:Terminus 12px
+    font pango:Source Code Pro 8
     position top
     colors {
         background #3f3f3f
