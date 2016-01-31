@@ -32,3 +32,12 @@
 
 [http]
 	cookiefile = /home/strcat/.config/git/cookies
+
+[transfer]
+	fsckobjects = true
+
+[fetch]
+	fsckobjects = true
+
+[receive]
+	fsckobjects = true
