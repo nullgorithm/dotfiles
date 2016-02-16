@@ -9,7 +9,6 @@ fi
 
 export $(gnome-keyring-daemon -s)
 
-synclient HorizTwoFingerScroll=1
 xset -b
 setxkbmap -option ctrl:nocaps -option shift:both_shiftlock
 gm display -window root ~/images/background.png
