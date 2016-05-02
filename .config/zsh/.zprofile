@@ -18,11 +18,6 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # disable less history file
 export LESSHISTFILE=-
 
-# highest compression
-export GZIP=-9 \
-  BZIP=-9 \
-  XZ_OPT=-9
-
 # turn on font antialiasing in java
 export _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=lcd
 
