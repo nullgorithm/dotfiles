@@ -6,7 +6,6 @@
 /.cache
 /.config/chromium
 /.config/git/cookies
-/.config/pulse
 /.config/zsh/.zcompcache
 /.config/zsh/.zcompdump
 /.config/zsh/.zsh_history
