@@ -20,6 +20,9 @@
 [push]
 	default = simple
 
+[commit]
+	verbose = true
+
 [diff]
 	tool = vimdiff
 	compactionHeuristic = true
