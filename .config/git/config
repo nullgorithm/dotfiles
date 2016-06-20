@@ -22,6 +22,7 @@
 
 [diff]
 	tool = vimdiff
+	compactionHeuristic = true
 
 [sendemail]
 	from = Daniel Micay <danielmicay@gmail.com>
